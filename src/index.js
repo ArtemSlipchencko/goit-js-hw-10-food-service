@@ -1,4 +1,7 @@
 import './styles.css';
-// import toggleTheme from './js/theme.js';
+import toggleTheme from './js/theme.js';
 
-// input.addEventListener('click', toggleTheme);
+
+const input = document.querySelector('#theme-switch-toggle');
+
+input.addEventListener('click', toggleTheme);
