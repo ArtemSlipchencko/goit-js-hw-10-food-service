@@ -8,4 +8,6 @@ const input = document.querySelector('#theme-switch-toggle');
 
 input.addEventListener('click', toggleTheme);
 
-document.querySelector('.js-menu').innerHTML = makeMenu(menu);
+menu.forEach(el => {
+    document.body.querySelector('.js-menu').innerHTML += makeMenu(el);
+});
