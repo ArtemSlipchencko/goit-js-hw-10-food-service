@@ -6,8 +6,8 @@ import menu from './menu.json';
 
 const input = document.querySelector('#theme-switch-toggle');
 
-input.addEventListener('click', toggleTheme);
+input.addEventListener('change', toggleTheme);
 
 menu.forEach(el => {
-    document.body.querySelector('.js-menu').innerHTML += makeMenu(el);
+    document.body.querySelector('.js-menu').insertAdjacentHTML('beforeend', makeMenu(el));
 });
