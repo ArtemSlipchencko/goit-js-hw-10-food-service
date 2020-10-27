@@ -10,6 +10,7 @@ if(localStorage.getItem('currentTheme') === Theme.DARK) {
     input.setAttribute('checked', '');
 };
 
+body.classList.add('light-theme');
 body.classList.add(`${localStorage.getItem('currentTheme')}`);
 
 const toggleTheme = function() {
